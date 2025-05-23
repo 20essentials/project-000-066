@@ -1,0 +1,14 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Simple Spiral
+    link(rel="shortcut icon", href="assets/favicon.png", type="image/x-icon")
+    link(rel="stylesheet", href="style.css")
+  body
+    .center
+      .container-items
+        each val in [...Array(80).keys()].map(i => i + 1)
+          .item(style=`--d: ${val};`)
+    script(src="script.js")
